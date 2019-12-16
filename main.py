@@ -1,29 +1,4 @@
-"""
-The oracle and the detective.
-
-An oracle is thinking of two numbers and a detective must guess those two
-numbers.
-
-Every time the detective guesses incorrectly the oracle will add the second
-number to the first and have a new number in mind.
-
-Example:
-- Oracle thinks of 1 and 5
-- Detective guesses 2 and 2
-- Oracle is now thinking of 6 and 5
-- Detective guesses 1 and 5
-- Oracle is now thinking of 11 and 5
-- Detective guesses 11 and 5
-- Detective wins
-
-Solution:
-Diagonally search through the two numbers so that every pair from 0,0 to
-inf,inf is tried.
-
-If the oracle chooses numbers between 0 and 100 it will take up to
-20000 attempts for the detective to guess correctly, but the detective
-will eventually get the combination correct.
-"""
+"""The oracle and the detective simulation."""
 import argparse
 
 from colorama import init as color_init, Fore
