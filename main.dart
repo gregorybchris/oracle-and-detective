@@ -1,7 +1,6 @@
 import 'detective.dart';
 import 'oracle.dart';
 
-
 runSimulation(nGuesses) {
   print("~Oracle and Detective~");
   Oracle oracle = Oracle(0, 100, 0, 100);
@@ -28,7 +27,6 @@ runSimulation(nGuesses) {
     print("a0=$alphaSecret, da=$deltaSecret, an=$alphaFinal");
   }
 }
-
 
 main() {
   runSimulation(10000);
